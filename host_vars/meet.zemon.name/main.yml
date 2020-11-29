@@ -24,16 +24,15 @@ exporter_xmpp_user: prometheus
 exporter_xmpp_pass: "{{ vault_exporter_xmpp_pass }}"
 
 ## Videobridge XMPP credetials (if running jvb in this host)
-videobridge_user: jvb_CHANGEME
+videobridge_user: jvb_user
 videobridge_pass: "{{ vault_videobridge_pass }}"
 # Set this to something different that "videobridge_user" if you want to share
 # videobridge_user and videobridge_pass across different videobridges
-videobridge_muc_nick: jvb_CHANGEME
+videobridge_muc_nick: jvb_muc_nickname
 
 ## Jibri XMPP credetials (if running jibri in this host)
-jibri_user: jibri_CHANGEME
+jibri_user: jibri_user
 jibri_pass: "{{ vault_jibri_pass }}"
 # Set this to something different that "videobridge_user" if you want to share
 # videobridge_user and videobridge_pass across different videobridges
-jibri_muc_nick: jibri_CHANGEME
-
+jibri_muc_nick: jibri_muc_nickname

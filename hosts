@@ -1,15 +1,13 @@
 ## central: jitsi-meet, prosody, jicofo
 ## ONLY one host should be in this group
 [central]
-central_host.YOURDOMAIN.TLD
+meet.zemon.name
 
 ## videbridge: jitsi-videobridge2
-[videobridges]
-central_host
-jvb.YOURDOMAIN.TLD
+[videobridges:children]
+central
 
 [jibris]
-jibri.YOURDOMAIN.TLD
 
 # No need to edit this
 [meet:children]
